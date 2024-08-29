@@ -1,0 +1,184 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.header, .main-content, .footer {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.city-info {
+    text-align: left;
+}
+
+.city {
+    font-size: 2em; /* Reduced font size for better mobile viewing */
+    margin: 0;
+}
+
+.country, .date {
+    margin: 0;
+}
+
+.change-location {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.Entercity {
+    padding: 10px;
+    font-size: 1em;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.buttonChangeLocation {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weatherCondition {
+    font-size: 1.5em; /* Reduced font size for better mobile viewing */
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherIcon {
+    width: 80px; /* Reduced icon size for better mobile viewing */
+    height: 80px;
+    margin-right: 20px;
+}
+
+.degre {
+    font-size: 3em; /* Reduced font size for better mobile viewing */
+}
+
+.wind-pressure {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wind-pressure-and-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.googleMap {
+    height: 400px; /* Reduced map height for better mobile viewing */
+    width: 100%; /* Changed to 100% width for mobile */
+    margin-top: 20px;
+    position: relative;
+}
+
+.additional-details {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.additional-details p {
+    margin: 5px 0;
+}
+
+.ErrorCityName {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+}
+
+.city-info, .main-content, .footer, .googleMap {
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header, .main-content, .footer {
+        width: 100%;
+    }
+
+    .city {
+        font-size: 2em;
+    }
+
+    .weatherIcon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .degre {
+        font-size: 2.5em;
+    }
+
+    .googleMap {
+        height: 300px;
+    }
+
+    .change-location {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .Entercity {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buttonChangeLocation {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .city {
+        font-size: 1.5em;
+    }
+
+    .weatherCondition {
+        font-size: 1.2em;
+    }
+
+    .degre {
+        font-size: 2em;
+    }
+
+    .googleMap {
+        height: 250px;
+    }
+}
